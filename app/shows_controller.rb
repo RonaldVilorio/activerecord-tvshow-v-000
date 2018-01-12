@@ -1,4 +1,4 @@
 def highest_rating
   binding.pry
-  Show.new.maximum(:rating)
+  show = Show.new.maximum(:rating)
 end
