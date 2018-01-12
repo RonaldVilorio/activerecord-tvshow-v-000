@@ -19,7 +19,7 @@ class Show < ActiveRecord::Base
     self.where("rating > 5")
   end
   def self.shows_by_alphabetical_order
-    self.where("SELECT *").order(:name)
+    self.where("SELECT *").order("name ASC")
   end
 
 end
